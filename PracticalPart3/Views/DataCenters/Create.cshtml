@@ -1,0 +1,78 @@
+﻿@model PracticalPart3.Models.DataCenter
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>DataCenter</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FiscalYear" class="control-label"></label>
+                <input asp-for="FiscalYear" class="form-control" />
+                <span asp-validation-for="FiscalYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FiscalPeriod" class="control-label"></label>
+                <input asp-for="FiscalPeriod" class="form-control" />
+                <span asp-validation-for="FiscalPeriod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Month" class="control-label"></label>
+                <input asp-for="Month" class="form-control" />
+                <span asp-validation-for="Month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InformationDate" class="control-label"></label>
+                <input asp-for="InformationDate" class="form-control" />
+                <span asp-validation-for="InformationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Branch" class="control-label"></label>
+                <input asp-for="Branch" class="form-control" />
+                <span asp-validation-for="Branch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Service" class="control-label"></label>
+                <input asp-for="Service" class="form-control" />
+                <span asp-validation-for="Service" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SscClient" class="control-label"></label>
+                <input asp-for="SscClient" class="form-control" />
+                <span asp-validation-for="SscClient" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetricName" class="control-label"></label>
+                <input asp-for="MetricName" class="form-control" />
+                <span asp-validation-for="MetricName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Value" class="control-label"></label>
+                <input asp-for="Value" class="form-control" />
+                <span asp-validation-for="Value" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetricType" class="control-label"></label>
+                <input asp-for="MetricType" class="form-control" />
+                <span asp-validation-for="MetricType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,101 @@
+Id,FiscalYear,FiscalPeriod,Month,InformationDate,Branch,Service,SscClient,MetricName,Value,MetricType
+1,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+2,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+3,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),139,Non Cumulative
+4,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Square Footage,5998,As at
+5,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+6,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Contracted Power Capacity (kVA),440,Non Cumulative
+7,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Power Consumption Rate (kVA),383,Non Cumulative
+8,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Square Footage,15053,As at
+9,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+10,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Contracted Power Capacity (kVA),1250,Non Cumulative
+11,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Power Consumption Rate (kVA),832,Non Cumulative
+12,2017-2018,1,April,4/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Square Footage,13154,As at
+13,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+14,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+15,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),151,Non Cumulative
+16,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Square Footage,5998,As at
+17,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+18,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Contracted Power Capacity (kVA),440,Non Cumulative
+19,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Power Consumption Rate (kVA),394,Non Cumulative
+20,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Square Footage,15053,As at
+21,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+22,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Contracted Power Capacity (kVA),1250,Non Cumulative
+23,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Power Consumption Rate (kVA),841,Non Cumulative
+24,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Square Footage,13154,As at
+25,2017-2018,2,May,5/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,Explain adjustment,Power Consumption Rate (kVA),0,Non Cumulative
+26,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+27,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+28,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),156,Non Cumulative
+29,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Square Footage,5998,As at
+30,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+31,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Contracted Power Capacity (kVA),440,Non Cumulative
+32,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Power Consumption Rate (kVA),389,Non Cumulative
+33,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Square Footage,15053,As at
+34,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+35,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Contracted Power Capacity (kVA),1250,Non Cumulative
+36,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Power Consumption Rate (kVA),857,Non Cumulative
+37,2017-2018,3,June,6/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Square Footage,13154,As at
+38,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+39,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+40,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),162,Non Cumulative
+41,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Square Footage,5998,As at
+42,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+43,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Contracted Power Capacity (kVA),440,Non Cumulative
+44,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Power Consumption Rate (kVA),397,Non Cumulative
+45,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Square Footage,15053,As at
+46,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+47,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Contracted Power Capacity (kVA),1250,Non Cumulative
+48,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Power Consumption Rate (kVA),844,Non Cumulative
+49,2017-2018,4,July,7/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Square Footage,13154,As at
+50,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+51,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+52,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),202,Non Cumulative
+53,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Square Footage,5998,As at
+54,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+55,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Contracted Power Capacity (kVA),440,Non Cumulative
+56,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Power Consumption Rate (kVA),357,Non Cumulative
+57,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Square Footage,15053,As at
+58,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+59,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Contracted Power Capacity (kVA),1250,Non Cumulative
+60,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Power Consumption Rate (kVA),864,Non Cumulative
+61,2017-2018,5,August,8/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Square Footage,13154,As at
+62,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+63,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+64,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),206,Non Cumulative
+65,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Square Footage,5998,As at
+66,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+67,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Contracted Power Capacity (kVA),440,Non Cumulative
+68,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Power Consumption Rate (kVA),354,Non Cumulative
+69,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Square Footage,15053,As at
+70,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+71,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Contracted Power Capacity (kVA),1250,Non Cumulative
+72,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Power Consumption Rate (kVA),875,Non Cumulative
+73,2017-2018,6,September,9/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Square Footage,13154,As at
+74,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+75,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+76,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),218,Non Cumulative
+77,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Square Footage,5998,As at
+78,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+79,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Contracted Power Capacity (kVA),440,Non Cumulative
+80,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Power Consumption Rate (kVA),365,Non Cumulative
+81,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Square Footage,15053,As at
+82,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+83,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Contracted Power Capacity (kVA),1250,Non Cumulative
+84,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Power Consumption Rate (kVA),894.5,Non Cumulative
+85,2017-2018,7,October,10/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Square Footage,13154,As at
+86,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+87,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+88,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),219,Non Cumulative
+89,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Square Footage,5998,As at
+90,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+91,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Contracted Power Capacity (kVA),1250,Non Cumulative
+92,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Power Consumption Rate (kVA),0,Non Cumulative
+93,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Borden,Square Footage,11840,As at
+94,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+95,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Contracted Power Capacity (kVA),1250,Non Cumulative
+96,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Power Consumption Rate (kVA),909,Non Cumulative
+97,2017-2018,8,November,11/30/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Gatineau,Square Footage,13154,As at
+98,2017-2018,9,"December ",12/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,% of time SSC Enterprise Data Centres Facilities are available,100,Non Cumulative
+99,2017-2018,9,"December ",12/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Contracted Power Capacity (kVA),1000,Non Cumulative
+100,2017-2018,9,"December ",12/31/2017,Data Centre Services,Data Centre Facilities - Enterprise,EDC Barrie,Power Consumption Rate (kVA),222,Non Cumulative
