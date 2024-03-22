@@ -17,7 +17,7 @@ namespace PracticalPart3.Data
 
             try
             {
-                string filePath = @"C:\\Users\\Jadan\\Source\\Repos\\PracticalPart3\\PracticalPart3\\DataCentreAvailability.csv";
+                string filePath = @"C:\\Users\\Jadan\\source\\repos\\jadjreige\\PracticalPart3\\PracticalPart3\\DataCentreAvailability.csv";
                 using (StreamReader sr = new StreamReader(filePath))
                 {
                     

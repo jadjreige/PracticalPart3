@@ -29,6 +29,12 @@ namespace PracticalPart3.Controllers{
 
         public async Task<IActionResult> LoadData()
         {
+
+            if (!_context.Database.CanConnect())
+            {
+                _context.Database.Migrate();
+            }
+
             _context.Database.ExecuteSqlRaw($"DELETE FROM DataCenter;");
 
             DTO data = list.LoadData();
@@ -60,7 +66,7 @@ namespace PracticalPart3.Controllers{
         /// </summary>
         public IActionResult SaveData()
         {
-            using (var writer = new StreamWriter(@"C:\\Users\\Jadan\\Source\\Repos\\PracticalPart3\\PracticalPart3\\SavedData.csv"))
+            using (var writer = new StreamWriter(@"C:\\Users\\Jadan\\source\\repos\\jadjreige\\PracticalPart3\\PracticalPart3\\SavedData.csv"))
             using (var csv = new CsvHelper.CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.WriteRecords(_context.DataCenter.ToList());
