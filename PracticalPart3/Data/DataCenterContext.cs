@@ -15,5 +15,6 @@ namespace PracticalPart3.Data
         }
 
         public DbSet<PracticalPart3.Models.DataCenter> DataCenter { get; set; } = default!;
+
     }
 }
