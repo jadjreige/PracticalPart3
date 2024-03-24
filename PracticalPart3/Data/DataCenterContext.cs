@@ -14,6 +14,15 @@ namespace PracticalPart3.Data
         {
         }
 
+        public static DataCenterContext CreateContext()
+        {
+            var connection = "Server=(localdb)\\mssqllocaldb;Database=DataCenterContext-6fc4806a-3279-44a2-96f4-e45810052184;Trusted_Connection=True;";
+            var optionsBuilder = new DbContextOptionsBuilder<DataCenterContext>();
+            optionsBuilder.UseSqlServer(connection);
+
+            return new DataCenterContext(optionsBuilder.Options);
+        }
+
         public DbSet<PracticalPart3.Models.DataCenter> DataCenter { get; set; } = default!;
 
     }

@@ -1,35 +1,58 @@
-using Castle.Core.Logging;
-using Moq;
-using System.Collections.Generic;
-using Newtonsoft.Json.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PracticalPart3.Data;
-using PracticalPart3.Controllers;
-using PracticalPart3.Migrations;
-using PracticalPart3.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using CsvHelper.Configuration;
-using Microsoft.EntityFrameworkCore.Internal;
-
+using PracticalPart3.Controllers;
+using PracticalPart3.Data;
+using PracticalPart3.Models;
 
 namespace UnitTests
 {
+
     [TestClass]
     public class DataCentersControllerTest
     {
 
+
         [TestMethod]
-        public void create_a_record_in_the_database()
+        public void Load_records()
         {
-            
+            DataCenterContext context = DataCenterContext.CreateContext();
 
-            DbContextOptions<DataCenterContext> options = 
+            DataCentersController controller = new(context);
 
+            var list = context.DataCenter.ToList();
+
+
+            var dataToCreate = new DataCenter
+            {
+                FiscalYear = "Test",
+                FiscalPeriod = "Test",
+                Month = "Test",
+                InformationDate = "Test",
+                Branch = "Test",
+                Service = "Test",
+                SscClient = "Test",
+                MetricName = "Test",
+                Value = 1,
+                MetricType = "Test"
+            };
+
+            context.Add(dataToCreate);
+
+            context.SaveChanges();
+
+            list = context.DataCenter.ToList();
+
+            controller.LoadData().Wait();
+
+            Assert.IsTrue(list.Count == 101);
+
+
+            list = context.DataCenter.ToList();
+
+            //The database should have 100 records when it gets migrated on launch
+            Assert.IsTrue(list.Count == 100);
 
         }
-
     }
-} 
+}
 
 
