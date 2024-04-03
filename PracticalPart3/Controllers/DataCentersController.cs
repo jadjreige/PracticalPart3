@@ -22,7 +22,11 @@ namespace PracticalPart3.Controllers{
             _context = context;
         }
 
-        // GET: DataCenters
+        /// <summary>
+        /// GET: Main page that lists all the database records. If the search string is not null it will search the database and list only the records that match the string.
+        /// </summary>
+        /// <param name="searchString"></param>
+        /// <returns>List of records from context</returns>
         public async Task<IActionResult> Index(String searchString) {
 
             var dataCenters = from dc in _context.DataCenter select dc;
@@ -31,7 +35,6 @@ namespace PracticalPart3.Controllers{
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                //double.TryParse(searchString, out double searchValue);
 
                 dataCenters = dataCenters.Where(dc =>
                 dc.Branch.Contains(searchString) ||

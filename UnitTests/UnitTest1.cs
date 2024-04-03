@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PracticalPart3.Controllers;
 using PracticalPart3.Data;
@@ -11,10 +12,10 @@ namespace UnitTests
     {
 
         /// <summary>
-        /// The test will run the application when it is firsdt loaded. The result should be a fresh dataset with 100 records.
+        /// The test will reload the database and add a test record. It will then search for that record. The result should contain only 1 record.
         /// </summary>
         [TestMethod]
-        public void Load_records_when_application_is_first_loaded()
+        public async Task Load_records_when_application_is_first_loaded()
         {
             /// Create context
             DataCenterContext context = DataCenterContext.CreateContext();
@@ -22,18 +23,18 @@ namespace UnitTests
             /// Set up the controller
             DataCentersController controller = new(context);
 
-            var list = context.DataCenter.ToList();
+            controller.LoadData().Wait();
 
             /// Initialize a record 
             var dataToCreate = new DataCenter
             {
                 FiscalYear = "Test",
                 FiscalPeriod = "Test",
-                Month = "Test",
+                Month = "Another Test",
                 InformationDate = "Test",
-                Branch = "Test",
+                Branch = "Something",
                 Service = "Test",
-                SscClient = "Test",
+                SscClient = "Other",
                 MetricName = "Test",
                 Value = 1,
                 MetricType = "Test"
@@ -43,15 +44,28 @@ namespace UnitTests
             context.Add(dataToCreate);
             context.SaveChanges();
 
-            /// Load data, this should erase everything that was done and load 100 rows
-            controller.LoadData().Wait();
+            /// Initialize the search text string
+            String searchText = "Test";
 
-            /// Get updated list
-            list = context.DataCenter.ToList();
+            /// load index view with the search string "Text"
+            var result = await controller.Index(searchText);
 
-            /// The database should have 100 records
-            Assert.IsTrue(list.Count == 100);
 
+            /// Assert: Ensure only one record is returned
+            var viewResult = result as ViewResult;
+
+            Assert.IsNotNull(viewResult.Model);
+            
+            /// Assert: Model should contain only one row
+            var model = viewResult.Model as List<DataCenter>;
+
+            Assert.AreEqual(1, model.Count);
+
+            /// Assert: The record should contain the searchString in one of the columns.
+            var searchedRecord = model[0];
+            var concatenatedString = $"{searchedRecord.FiscalYear} {searchedRecord.FiscalPeriod} {searchedRecord.Month} {searchedRecord.InformationDate} {searchedRecord.Branch} {searchedRecord.Service} {searchedRecord.SscClient} {searchedRecord.MetricName} {searchedRecord.MetricType} {searchedRecord.Value}";
+
+            Assert.IsTrue(concatenatedString.Contains(searchText));
         }
     }
 } // Jad Jreige
