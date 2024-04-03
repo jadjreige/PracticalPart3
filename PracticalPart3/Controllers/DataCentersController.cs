@@ -50,6 +50,11 @@ namespace PracticalPart3.Controllers{
             return View(await dataCenters.ToListAsync());
         }
 
+        /// <summary>
+        /// Deletes current data in the data base and reloads 100 new records. 
+        /// Creates new database if it does not exist
+        /// </summary>
+        /// <returns>Index view</returns>
         public async Task<IActionResult> LoadData()
         {
 
@@ -85,11 +90,11 @@ namespace PracticalPart3.Controllers{
         }
 
         /// <summary>
-        /// Method that saves the DTO list to a csv file in the prefered location 
+        /// Method that saves the database records to a csv file in the prefered location 
         /// </summary>
         public IActionResult SaveData()
         {
-            using (var writer = new StreamWriter(@"C:\\Users\\Jadan\\source\\repos\\jadjreige\\PracticalPart3\\PracticalPart3\\SavedData.csv"))
+            using (var writer = new StreamWriter(@"C:\\Users\\Jadan\\source\\repos\\PracticalPart3\\PracticalPart3\\SavedData.csv"))
             using (var csv = new CsvHelper.CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.WriteRecords(_context.DataCenter.ToList());
@@ -97,7 +102,11 @@ namespace PracticalPart3.Controllers{
             return RedirectToAction("Index");
         }
 
-        // GET: DataCenters/Details/5
+        /// <summary>
+        /// GET: gets the details of a records
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Details view</returns>
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -115,15 +124,20 @@ namespace PracticalPart3.Controllers{
             return View(dataCenter);
         }
 
-        // GET: DataCenters/Create
+        /// <summary>
+        /// GET: Goes to the view for create
+        /// </summary>
+        /// <returns>Create view</returns>
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: DataCenters/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// POST: creates new record in the database
+        /// </summary>
+        /// <param name="dataCenter"></param>
+        /// <returns>Index view</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FiscalYear,FiscalPeriod,Month,InformationDate,Branch,Service,SscClient,MetricName,Value,MetricType")] DataCenter dataCenter)
@@ -137,7 +151,11 @@ namespace PracticalPart3.Controllers{
             return View(dataCenter);
         }
 
-        // GET: DataCenters/Edit/5
+        /// <summary>
+        /// GET: gets details of a record by Id to edit
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Edit view</returns>
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -153,9 +171,12 @@ namespace PracticalPart3.Controllers{
             return View(dataCenter);
         }
 
-        // POST: DataCenters/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// POST: updates editted record to the database.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="dataCenter"></param>
+        /// <returns>Index view</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,FiscalYear,FiscalPeriod,Month,InformationDate,Branch,Service,SscClient,MetricName,Value,MetricType")] DataCenter dataCenter)
@@ -188,7 +209,11 @@ namespace PracticalPart3.Controllers{
             return View(dataCenter);
         }
 
-        // GET: DataCenters/Delete/5
+        /// <summary>
+        /// GET: gets record by Id to delete
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Delete view</returns>
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -206,7 +231,11 @@ namespace PracticalPart3.Controllers{
             return View(dataCenter);
         }
 
-        // POST: DataCenters/Delete/5
+        /// <summary>
+        /// POST: deletes record from the database
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Index view</returns>
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

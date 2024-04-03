@@ -10,17 +10,21 @@ namespace UnitTests
     public class DataCentersControllerTest
     {
 
-
+        /// <summary>
+        /// The test will run the application when it is firsdt loaded. The result should be a fresh dataset with 100 records.
+        /// </summary>
         [TestMethod]
-        public void Load_records()
+        public void Load_records_when_application_is_first_loaded()
         {
+            /// Create context
             DataCenterContext context = DataCenterContext.CreateContext();
 
+            /// Set up the controller
             DataCentersController controller = new(context);
 
             var list = context.DataCenter.ToList();
 
-
+            /// Initialize a record 
             var dataToCreate = new DataCenter
             {
                 FiscalYear = "Test",
@@ -35,24 +39,21 @@ namespace UnitTests
                 MetricType = "Test"
             };
 
+            /// Add the record into the database
             context.Add(dataToCreate);
-
             context.SaveChanges();
 
-            list = context.DataCenter.ToList();
-
+            /// Load data, this should erase everything that was done and load 100 rows
             controller.LoadData().Wait();
 
-            Assert.IsTrue(list.Count == 101);
-
-
+            /// Get updated list
             list = context.DataCenter.ToList();
 
-            //The database should have 100 records when it gets migrated on launch
+            /// The database should have 100 records
             Assert.IsTrue(list.Count == 100);
 
         }
     }
-}
+} // Jad Jreige
 
 
