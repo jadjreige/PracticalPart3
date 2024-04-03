@@ -23,8 +23,31 @@ namespace PracticalPart3.Controllers{
         }
 
         // GET: DataCenters
-        public async Task<IActionResult> Index() {
-            return View(await _context.DataCenter.ToListAsync());
+        public async Task<IActionResult> Index(String searchString) {
+
+            var dataCenters = from dc in _context.DataCenter select dc;
+
+            ViewData["IsSearchPerformed"] = !String.IsNullOrEmpty(searchString);
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                //double.TryParse(searchString, out double searchValue);
+
+                dataCenters = dataCenters.Where(dc =>
+                dc.Branch.Contains(searchString) ||
+                dc.FiscalPeriod.Contains(searchString) ||
+                dc.InformationDate.Contains(searchString) ||
+                dc.MetricName.Contains(searchString) ||
+                dc.MetricType.Contains(searchString) ||
+                dc.Month.Contains(searchString) ||
+                dc.Service.Contains(searchString) ||
+                dc.FiscalYear.Contains(searchString) ||
+                dc.SscClient.Contains(searchString) ||
+                dc.Value.ToString().Contains(searchString));
+
+            }
+
+            return View(await dataCenters.ToListAsync());
         }
 
         public async Task<IActionResult> LoadData()

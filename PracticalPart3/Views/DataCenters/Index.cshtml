@@ -4,15 +4,35 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="display-3 text-center fw-bold">Practical Project Part 3</h1>
+<script>
+    function clearSearch() {
+        document.getElementsByName('searchString')[0].value = '';
+    }
+</script>
+
+<h1 class="display-3 text-center fw-bold">Practical Project Part 4</h1>
 <p class="display-6 text-center">Jad Jreige</p>
 
+<div class="row">
+    <div class="col">
+        <p>
+            <a asp-action="LoadData">Reload Data</a> |
+            <a asp-action="Create">Create New</a> |
+            <a asp-action="SaveData">Save CSV</a>
+        </p>
+    </div>
+    <form class="col-3" asp-action="Index">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="searchString" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Search Database">
+            <button type="submit" class="btn btn-primary">Search</button>
+            @if ((bool)ViewData["IsSearchPerformed"])
+            {
+                <button type="submit" class="btn btn-danger" onclick="clearSearch()">Clear</button>
+            }
+        </div>
+    </form>
+</div>
 
-<p>
-    <a asp-action="LoadData">Reload Data</a> |
-    <a asp-action="Create">Create New</a> |
-    <a asp-action="SaveData">Save CSV</a>
-</p>
 
 <table class="table">
     <thead>
@@ -50,8 +70,10 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
-@foreach (var item in Model) {
+@if (Model.Any())
+{
+        <tbody>
+    @foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.FiscalYear)
@@ -89,6 +111,22 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
+    }
+        <tr>
+            <td>
+                    <p class="fst-italic text-secondary">Rows: @Model.Count()</p>
+            </td>
+        </tr>
+        </tbody>
 }
+else
+{
+    <tbody>
+        <tr>
+            <td colspan="10">
+                <p class="fst-italic text-secondary">No records to display</p>
+            </td>
+        </tr>
     </tbody>
+}
 </table>
