@@ -97,7 +97,7 @@ namespace PracticalPart3.Controllers{
         /// </summary>
         public IActionResult SaveData()
         {
-            using (var writer = new StreamWriter(@"C:\\Users\\Jadan\\source\\repos\\PracticalPart3\\PracticalPart3\\SavedData.csv"))
+            using (var writer = new StreamWriter(@"C:\\Users\\Jadan\\source\\repos\\jadjreige\\PracticalPart3\\PracticalPart3\\SavedData.csv"))
             using (var csv = new CsvHelper.CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.WriteRecords(_context.DataCenter.ToList());

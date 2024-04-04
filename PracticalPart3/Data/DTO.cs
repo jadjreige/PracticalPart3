@@ -17,13 +17,13 @@ namespace PracticalPart3.Data
 
             try
             {
-                string filePath = @"C:\\Users\\Jadan\\source\\repos\\PracticalPart3\\PracticalPart3\\DataCentreAvailability.csv";
+                string filePath = @"C:\\Users\\Jadan\\source\\repos\\jadjreige\\PracticalPart3\\PracticalPart3\\DataCentreAvailability.csv";
                 using (StreamReader sr = new StreamReader(filePath))
                 {
                     
                     string line;
                     int count = 0;
-                    while ((line = sr.ReadLine()) != null && count <= 100)
+                    while ((line = sr.ReadLine()) != null)
                     {
                         if (count == 0)
                         {
